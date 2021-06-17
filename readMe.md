@@ -214,8 +214,10 @@ word-spacing:量词
 -
 
 <br id="zt">
+
 字体
 =
+
 |属性|描述|
 |-:|:-|
 |font|字体属性简写(style variant weight size/line-height)|
@@ -225,28 +227,36 @@ word-spacing:量词
 |font-wegith|字体粗细|
 
 <br id="lj">
+
 链接
 =
+
 a:link {color:#000000;}      未访问链接  
 a:visited {color:#00FF00;}  已访问链接   
 a:hover {color:#FF00FF;}  鼠标移动到链接上   
 a:active {color:#0000FF;}  鼠标点击时   
 
 <br id="lbys">
+
 列表样式
+
 =
+
 list-style:
 -
-|属性|	描述|
+
+|属性|描述|
 |-:|:-|
-|list-style	|简写属性。用于把所有用于列表的属性设置于一个声明中|
-|list-style-image|	将图像设置为列表项标志。|
-|list-style-position|	设置列表中列表项标志的位置。|
-|list-style-type|	设置列表项标志的类型。|
+|list-style|简写属性。用于把所有用于列表的属性设置于一个声明中|
+|list-style-image|将图像设置为列表项标志。|
+|list-style-position|设置列表中列表项标志的位置。|
+|list-style-type|设置列表项标志的类型。|
 
 <br id="bk">
+
 边框
 =
+
 border
 -
 border-collapse:collapse;边框重叠
@@ -254,14 +264,18 @@ border-collapse:collapse;边框重叠
 <br id="hzmx">
 css盒子模型
 =
+
 content->padding->border->margin
 -
+
 <br id="lk">
 轮廓outline
 =
+
 <br id="wbj">
 外边距
 =
+
 margin:上 左 下 右  
 margin:上 左右 下  
 margin:上下 左右  
@@ -270,15 +284,18 @@ margin:全部
 <br id="tc">
 填充
 =
+
 padding
 -
 
 <br id="xs">
 display显示
 =
+
 <br id="dw">
 Position定位
 =
+
 static默认 不受top等属性影响  
 relative相对定位  
 fixed相对于浏览器的相对位置  
@@ -289,84 +306,95 @@ clip: rect(上，左，下，右 );剪辑一个绝对定位元素
 cursor:pointer光标类型  
 
 <br id="yc">
+
 overflow元素溢出
 =
+
 |值|意义|
 |-:|:-|
-|visible|	默认值。内容不会被修剪，会呈现在元素框之外。
-|hidden|	内容会被修剪，并且其余内容是不可见的。
-|scroll|	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+|visible|默认值。内容不会被修剪，会呈现在元素框之外。
+|hidden|内容会被修剪，并且其余内容是不可见的。
+|scroll|内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
 |auto|	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
-|inherit|	规定应该从父元素继承 overflow 属性的值。
+|inherit|规定应该从父元素继承 overflow 属性的值。
 
 <br id="fd">
+
 浮动float
 =
+
 清除浮动clear 
 
 
 <br id="dqfs">
+
 对齐方式
 =
+
 text-align
 
 <br id="xzf">
 选择符
 =
 
->div p 后代选择符 
->div+p 相邻选择符(兄弟选择符)  
->div~p 后继相邻选择符(后继兄弟选择符)选择div后面全部p元素  
+> div p 后代选择符 
+> div+p 相邻选择符(兄弟选择符)  
+> div~p 后继相邻选择符(后继兄弟选择符)选择div后面全部p元素  
 
 
 <br id="wl">
+
 伪类
 =
->链接专属伪类  
->a:link {color:#FF0000;} 未访问的链接   
->a:visited {color:#00FF00;} 已访问的链接   
->a:hover {color:#FF00FF;} 鼠标划过链接   
->a:active {color:#0000FF;} 已选中的链接   
->其他伪类  
->:first-child 元素是第一个子元素就匹配   
->:last-child 选择所有元素的最后一个子元素   
->:checked 选择所有选中的表单元素   
->:disabled选择所有禁用的表单元素   
->:empty 选择所有没有子元素的p元素   
->:enabled 选择所有启用的表单元素   
->:first-of-type /*元素是其父元素的第一个元素   
->:in-range /*选择元素指定范围内的值   
->:invalid 选择所有无效的元素   
->last-of-type 选择每个元素是其母元素的最后一个元素   
 
->:not(selector) 选择selector以外的元素  
->:nth-child(n)  选择元素的父元素的第n个子元素  
->:nth-last-child(n) 选择元素倒数的第n个子元素  
->:nth-last-of-type(n) 选择元素倒数的第n个子元素   
->:nth-of-type(n) 选择元素第n个子元素   
->p:only-of-type  选择所有仅有一个子元素为p的元素  
->p:only-child 选择所有仅有一个子元素的元素  
->:optional 选择没有"required"的元素属性  
->:out-of-range 选择指定范围以外的值的元素属性  
->:read-only 选择只读属性的元素属性  
->:read-write 选择没有只读属性的元素属性  
->:required 选择有"required"属性指定的元素属性  
->:root 选择文档的根元素  
->:target 选择当前活动元素(点击URL包含锚的名字)  
->:valid 选择所有有效值的属性  
->:focus 选择元素输入后具有焦点  
->:first-letter 选择元素的第一个字母  
->:first-line 选择元素的第一行  
->:before 在元素之前插入内容  
->:after 在元素之后插入内容  
->:lang(language)为元素的lang属性选择一个开始值
+> 链接专属伪类  
+> a:link {color:#FF0000;} 未访问的链接   
+> a:visited {color:#00FF00;} 已访问的链接   
+> a:hover {color:#FF00FF;} 鼠标划过链接   
+> a:active {color:#0000FF;} 已选中的链接   
+> 其他伪类  
+> :first-child 元素是第一个子元素就匹配   
+> :last-child 选择所有元素的最后一个子元素   
+> :checked 选择所有选中的表单元素   
+> :disabled选择所有禁用的表单元素   
+> :empty 选择所有没有子元素的p元素   
+> :enabled 选择所有启用的表单元素   
+> :first-of-type /*元素是其父元素的第一个元素   
+> :in-range /*选择元素指定范围内的值   
+> :invalid 选择所有无效的元素   
+> last-of-type 选择每个元素是其母元素的最后一个元素   
+
+> :not(selector) 选择selector以外的元素  
+> :nth-child(n)  选择元素的父元素的第n个子元素  
+> :nth-last-child(n) 选择元素倒数的第n个子元素  
+> :nth-last-of-type(n) 选择元素倒数的第n个子元素   
+> :nth-of-type(n) 选择元素第n个子元素   
+> p:only-of-type  选择所有仅有一个子元素为p的元素  
+> p:only-child 选择所有仅有一个子元素的元素  
+> :optional 选择没有"required"的元素属性  
+> :out-of-range 选择指定范围以外的值的元素属性  
+> :read-only 选择只读属性的元素属性  
+> :read-write 选择没有只读属性的元素属性  
+> :required 选择有"required"属性指定的元素属性  
+> :root 选择文档的根元素  
+> :target 选择当前活动元素(点击URL包含锚的名字)  
+> :valid 选择所有有效值的属性  
+> :focus 选择元素输入后具有焦点  
+> :first-letter 选择元素的第一个字母  
+> :first-line 选择元素的第一行  
+> :before 在元素之前插入内容  
+> :after 在元素之后插入内容  
+> :lang(language)为元素的lang属性选择一个开始值
 
 <br id="tmd">
+
 透明度
 =
+
 opacity:{0~1}
 
 <br id="mtcx">
+
 媒体查询
 =
 
@@ -389,6 +417,7 @@ screen and (min-width: 600px) and (max-width: 800px)视图大小大于大于600p
 
 使用方式
 -
+
 ```css
 <link rel="stylesheet" type="text/css" href="styleA.css" media="screen and (min-width: 400px)">/*当屏幕的宽度大于等于400px的时候，应用styleA.css*/
 
@@ -401,8 +430,10 @@ screen and (min-width: 600px) and (max-width: 800px)视图大小大于大于600p
 ```
 
 <br id="sxxzq">
+
 属性选择器
 =
+
 [属性]  
 [属性="值"]  完全等于这个值
 [属性~="包含的值"]属性值包含了这个值 需要空格分隔的完整词  
@@ -416,6 +447,7 @@ resize: none;
 <br id="jsq">
 计数器
 =
+
 counter-reset - 创建或者重置计数器  
 counter-increment - 递增变量  
 content - 插入生成的内容  
