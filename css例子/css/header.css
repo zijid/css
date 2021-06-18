@@ -1,0 +1,24 @@
+#header #logo{
+    width:120px;height:90px;
+    color:#fff;font-size: 40px;
+    position: relative;
+}
+#header>div{float:left;}
+#header #logo::after{
+    content: "logo";
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+}
+#header #nav{
+    width:calc( 100vw - 120px);height:30px;
+    line-height:30px;
+    position:relative;
+}
+#nav .box{height:30px;position:absolute;right:50px;bottom:0;}
+#nav a{
+    color:#fff;font-size:12px;text-decoration:none;
+    display: inline-block;
+    width:5em;text-align: center;
+}
+#nav a:hover{
+    background-color:rgb(0, 130, 182) ;
+}
